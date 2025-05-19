@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="/html/index.html">Início</a></li>
+                <li><a href="/html/login.html">Login</a></li>
+                <li><a href="/html/quemsomos.html">Quem Somos</a></li>
+                <li><a href="/html/produtos.html">Produtos</a></li>
+                <li><a href="/html/produtos-femininos.html">Produtos Femininos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="form-login">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required />
+
+            <button type="submit">Entrar</button>
+
+            <div class="login-links">
+                <a href="/html/cadastro.html">Cadastrar</a>
+                <a href="/html/esqueceu-senha.html">Esqueceu a senha?</a>
+            </div>
+        </form>
+    </main>
+
+    <script>
+      document.querySelector('.form-login').addEventListener('submit', function(event) {
+        event.preventDefault();
+        window.location.href = '/html/produtos.html';
+      });
+    </script>
+</body>
+</html>

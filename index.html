@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Apresentação do Site</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .menu-btn {
+      font-size: 30px;
+      cursor: pointer;
+      padding: 10px;
+      background: #333;
+      color: white;
+      border: none;
+      display: none;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .menu {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .menu-btn {
+        display: block;
+      }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        background: #444;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu.show {
+        display: flex;
+      }
+
+      .menu li a {
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #666;
+      }
+
+      .menu li a:hover {
+        background: #555;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo à Nossa Loja</h1>
+    <nav>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <ul class="menu" id="menu">
+        <li><a href="/html/index.html">Início</a></li>
+        <li><a href="/html/login.html">Login</a></li>
+        <li><a href="/html/quemsomos.html">Quem Somos</a></li>
+        <li><a href="/html/produtos.html">Produtos</a></li>
+        <li><a href="/html/produtos-femininos.html">Produtos Femininos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Moda Simples e Acessível</h2>
+      <p>Roupas pensadas para o seu dia a dia. Estilo, conforto e qualidade em cada detalhe.</p>
+      <a href="/html/login.html" class="btn-login">Fazer Login</a>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.menu a:hover {
+    color: #f4b400;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+/* Seção de introdução */
+.intro {
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Botão de login */
+.btn-login {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #f4b400;
+    color: #1a1a1a;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #444;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilo para login */
+.form-login {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+/* Produtos agrupados por categoria */
+.produtos {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.produtos h2 {
+    grid-column: 1 / -1;
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.produtos article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 360px;
+    transition: transform 0.3s ease;
+}
+
+.produtos article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.15);
+}
+
+.produtos article h3 {
+    margin: 15px 0 10px 0;
+    color: #222;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.produtos article p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+/* Imagem dos produtos */
+.produtos img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Seção Quem Somos */
+.sobre-nos {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 35px 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 2.2em;
+    color: #222;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sobre-nos p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #444;
+}
